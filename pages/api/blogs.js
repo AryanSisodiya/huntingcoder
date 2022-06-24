@@ -1,5 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import * as fs from 'fs';
 
 export default function handler(req, res) {
-  res.status(200).json({ name: 'Aryan the great' })
+  fs.readdir(`blogdata`, (err, data) => {
+    console.log(req.query.slug);
+    res.status(200).json(data);
+  });
 }
