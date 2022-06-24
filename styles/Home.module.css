@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+#con {
+  background: rgb(196, 7, 7);
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -112,6 +116,14 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.mainNav {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background: white;
+  padding: 1px 0;
 }
 
 .mainNav ul {

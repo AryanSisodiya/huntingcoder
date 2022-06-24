@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Script from "next/script";
+// import styles1 from '../styles/Home2.module.css';
+// import Script from "next/script";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -15,10 +17,10 @@ export default function Home() {
       </Head>
       <nav className={styles.mainNav}>
         <ul>
-          <li>Home</li>
-          <li>Contact</li>
-          <li>Blog</li>
-          <li>About us</li>
+          <Link href='/'><a><li>Home</li></a></Link>
+          <Link href='/contact'><a><li>Contact</li></a></Link>
+          <Link href='/about'><a><li>About</li></a></Link>
+          <Link href='/blog'><a><li>Blog</li></a></Link>
         </ul>
       </nav>
 
@@ -31,7 +33,9 @@ export default function Home() {
           A blog for hunting coders by a hunting coder
         </p>
 
-        <div className="blogs">
+        {/* <div className={styles1.con}> */}
+        {/* <div id={styles.con}> */}
+        <div>
           <h2>Popular Blogs</h2>
           <div className="blogItem">
             <h3>How to learn Js in 2022</h3>
