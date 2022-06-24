@@ -54,7 +54,7 @@
 }
 
 .description {
-  margin: 4rem 0;
+  /* margin: 4rem 0; */
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -124,6 +124,7 @@
   top: 0;
   background: white;
   padding: 1px 0;
+  z-index: 500000;
 }
 
 .mainNav ul {
@@ -136,4 +137,15 @@
   margin: 0 23px;
   list-style: none;
   font-weight: bold;
+}
+
+.myImg {
+  /* margin: 20px auto !important; */
+  border-radius: 10px;
+  /* height: 50px !important;
+  width: 50px !important; */
+}
+
+.imageWrapper {
+  padding: 20px;
 }
